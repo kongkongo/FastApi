@@ -1,0 +1,13 @@
+pipline:
+  - name: load_policy
+    metainfo:
+      model_path: /dev/shm/x.job
+      model_type: svm
+  - name: data_policy
+    metainfo:
+      category_mapping_info: default
+      data_type: vec
+      max_data_nums: 5000
+  - name: save_policy
+    metainfo:
+      save_to_database: True # 目前只支持数据库存储

@@ -1,0 +1,12 @@
+mysql_config:
+  dialect:   mysql
+  driver: pymysql
+  dbname:  Test
+  host: 127.0.0.1
+  user: root
+  port: 3306
+  password: root
+  charset: utf8mb4
+  pool_size: 5
+machine_learning:
+  model_path:

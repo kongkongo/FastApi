@@ -1,0 +1,10 @@
+mysql_config:
+  dialect: mysql
+  driver: pymysql
+  host:127.0.0.1
+  user: root
+  port: 3306
+  password: root
+  dbname: db_class
+  charset: utf8mb4
+  pool_size: 5

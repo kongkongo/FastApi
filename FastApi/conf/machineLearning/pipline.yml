@@ -1,0 +1,19 @@
+
+pipline:
+  - name: data_policy
+    metainfo:
+      category_mapping_info: default
+      max_data_nums: 5000
+      data_percent:
+        is: 0.3
+        uncertain: 0.7
+  - name: training_policy
+    metainfo:
+      type: svm
+      params:
+        class_weight: balanced
+        gamma: 0.001
+        probability: true
+  - name: save_policy
+    metainfo:
+      model_path: /dev/shm/x.job
